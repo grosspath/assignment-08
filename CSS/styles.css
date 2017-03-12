@@ -11,6 +11,9 @@ body {
 #app-container {
   background-color: #6b9373; }
 
+.small-but-mighty {
+  display: none; }
+
 .column-container-top {
   text-align: center;
   background-color: #6b9373;
@@ -28,17 +31,12 @@ body {
   display: inline-block;
   text-align: center; }
 
-.text {
-  height: 200px;
-  width: 100%;
-  margin: 0 0 0 60px; }
-
 .nav_button button {
   width: 360px;
   height: 50px;
   border: 2px white solid;
   background-color: inherit;
-  color: white;
+  color: lightgrey;
   margin-top: 40px;
   display: inline-block; }
 
@@ -54,9 +52,11 @@ body {
   float: left;
   font-size: 24px;
   font-weight: lighter;
-  margin-left: 14px; }
+  margin-left: 24px; }
 
 .text {
+  width: 100%;
+  margin: 0 0 0 60px;
   width: 600px;
   height: 240px;
   background-color: #fbf9fc; }
@@ -170,13 +170,13 @@ body {
   vertical-align: middle; }
 
 .background {
-  width: 703px;
+  width: 728px;
   height: 320px;
   display: block;
   background-image: url(../assets/solrod-drawingboard-background.jpg);
   background-size: cover; }
 
-span.what {
+.what {
   display: block;
   color: white;
   text-align: center;
@@ -186,10 +186,16 @@ span.what {
   border-radius: 6px;
   padding: 20px;
   margin-left: 16px;
-  opacity: 0.9; }
+  opacity: 0.9;
+  position: relative;
+  top: 120px; }
 
 .icon-set {
   background-color: white;
+  border: dotted 10px lightgrey;
+  border-top: none;
+  border-left: none;
+  border-right: none;
   height: 120px;
   padding: 30px; }
 
@@ -225,8 +231,11 @@ span.what {
   display: none; }
 
 @media screen and (min-width: 768px) {
-  .fa-bars {
+  .nav_hamburger {
     display: none; }
+
+  .nav_bar__full-width {
+    display: inline-block; }
 
   .text {
     width: 1000px;
@@ -245,15 +254,16 @@ span.what {
     width: 800px;
     line-height: 30px; }
 
-  .body {
-    width: 1920px; }
+  body {
+    width: 1912px;
+    border: 1px solid black; }
 
   #app-container {
     width: 1280px; }
 
   .container {
-    width: 1920px;
-    background-color: #6b9373; }
+    background-color: #6b9373;
+    width: 1880px; }
 
   .column-container-top {
     width: 1920px; }
@@ -263,32 +273,27 @@ span.what {
     height: 80px;
     background-color: black;
     padding: 0;
+    margin-top: -8px;
+    color: white;
+    font-size: 20px; }
+
+  .routes {
     display: inline-block;
-    margin-top: -8px; }
+    padding: 28px; }
+
+  .nav_bar__right-side {
+    color: white;
+    font-size: 20px;
+    list-style: none;
+    display: inline-block;
+    position: absolute;
+    top: -30px;
+    left: 1500px; }
 
   .nav_button button {
     color: lightgrey;
-    margin-top: 100px;
+    margin-top: 140px;
     margin-left: -160px; }
-
-  .nav_bar__full-width {
-    display: block; }
-
-  .nav_bar__full-width p {
-    float: left;
-    display: inline-block;
-    padding: 14px;
-    font-size: 12px;
-    color: white; }
-
-  .nav_bar__right-side li {
-    font-size: 12px;
-    color: white;
-    list-style: none;
-    display: inline-block;
-    float: right;
-    padding: 14px;
-    margin-right: 32px; }
 
   .smallthumb_column {
     width: 1800px;
@@ -299,7 +304,8 @@ span.what {
 
   .employee-art-grants {
     margin-left: 520px;
-    margin-bottom: 80px; }
+    margin-bottom: 80px;
+    color: #ABB7B7; }
 
   .bigthumb {
     width: 1500px;
@@ -319,6 +325,60 @@ span.what {
     border-bottom: lightgrey 12px dotted; }
 
   .icons {
-    float: right; } }
+    float: right; }
+
+  .text {
+    width: 1744px;
+    margin: 80px 0 16px 110px; }
+
+  .fa-shield {
+    position: absolute;
+    top: 2px;
+    left: 14px;
+    font-size: 30px; }
+
+  .left-side_info {
+    position: absolute;
+    top: 2px;
+    left: 80px; }
+
+  .small-but-mighty {
+    background-image: url("../assets/solrod-team-background.jpg");
+    display: block;
+    background-size: cover;
+    height: 600px;
+    width: 1908px;
+    margin-bottom: 40px;
+    margin-top: 40px; }
+
+  .last-image img {
+    margin-left: 700px;
+    margin-top: 100px;
+    width: 400px;
+    height: 400px; }
+
+  .what {
+    text-align: center;
+    width: 300px;
+    padding-top: 30px;
+    margin-left: 760px; }
+
+  .background {
+    width: 1908px; }
+
+  .icon-set {
+    width: 1908px;
+    margin-left: -2px; }
+
+  .insta-icon,
+  .tw-icon,
+  .face-icon {
+    margin-left: 30px; }
+
+  .face-icon {
+    margin-right: 60px; }
+
+  .icons img {
+    width: 30px; } }
 
 /*# sourceMappingURL=styles.css.map */

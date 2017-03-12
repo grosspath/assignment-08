@@ -14,6 +14,10 @@ body {
   background-color:  #6b9373;
 }
 
+.small-but-mighty {
+  display: none;
+}
+
 .column-container-top {
   text-align: center;
   background-color: #6b9373;
@@ -28,21 +32,18 @@ body {
 .nav_bar {
   vertical-align: top;
 }
+
 .nav_button {
   display: inline-block;
   text-align: center;
 }
-.text {
-  height: 200px;
-  width: 100%;
-  margin: 0 0 0 60px;
-}
+
 .nav_button button {
   width: 360px;
   height: 50px;
   border: 2px white solid;
   background-color: inherit;
-  color: white;
+  color: lightgrey;
   margin-top: 40px;
   display: inline-block;
 }
@@ -59,17 +60,17 @@ body {
   float: left;
   font-size: 24px;
   font-weight: lighter;
-  margin-left: 14px;
+  margin-left: 24px;
 }
 
 .text {
+  width: 100%;
+  margin: 0 0 0 60px;
   width: 600px;
   height: 240px;
   background-color: #fbf9fc;
-
-
-
 }
+
 .text h1 {
   font-family: "Paladino";
   font-size: 40px;
@@ -195,15 +196,15 @@ body {
 
 
 .background {
-  width: 703px;
+  width: 728px;
   height: 320px;
   display: block;
   background-image: url(../assets/solrod-drawingboard-background.jpg);
   background-size: cover;
 }
 
- span.what {
-   display: block;
+ .what {
+  display: block;
   color: white;
   text-align: center;
   background-color: #6470af;
@@ -213,15 +214,19 @@ body {
   padding: 20px;
   margin-left: 16px;
   opacity: 0.9;
-
+  position: relative;
+  top: 120px;
 }
 
 .icon-set {
   background-color: white;
+  border: dotted 10px lightgrey;
 
+  border-top: none;
+  border-left: none;
+  border-right: none;
   height: 120px;
   padding: 30px;
-
 }
 
 .insta-icon {
@@ -229,31 +234,32 @@ body {
   display: inline-block;
   text-align: left;
 }
+
 .insta-icon img {
   width: 40px;
   height: 40px;
-
-
   color: #D2D7D3;
 }
+
 .tw-icon {
   width: 50px;
   display: inline-block;
 }
+
 .tw-icon img {
   width: 40px;
   height: 40px;
-
   color: #D2D7D3;
 }
+
 .face-icon {
   width: 50px;
   display: inline-block;
 }
+
 .face-icon img {
   width: 40px;
   height: 40px;
-
   color: #D2D7D3;
 }
 
@@ -264,22 +270,21 @@ body {
 
 @media screen and (min-width: 768px) {
 
-  .fa-bars {
+  .nav_hamburger {
     display: none;
   }
 
+  .nav_bar__full-width {
+    display: inline-block;
+  }
 
-
-  .text {
-    width: 1000px;
-
-    height: 280px;
-
-    margin: 80px 0;
-    margin-left: 440px;
-
-
+.text {
+  width: 1000px;
+  height: 280px;
+  margin: 80px 0;
+  margin-left: 440px;
 }
+
 .text h1 {
   padding-top: 50px;
   margin-left: auto;
@@ -292,66 +297,59 @@ body {
   width: 800px;
   line-height: 30px;
 }
-  .body {
-    width: 1920px;
+
+body {
+  width: 1912px;
+  border: 1px solid black;
 }
 
 #app-container {
   width: 1280px;
 }
 
-  .container {
-    width: 1920px;
-    background-color: #6b9373;
-  }
+.container {
+  background-color: #6b9373;
+  width: 1880px;
+}
 
-  .column-container-top {
-    width: 1920px;
-  }
+.column-container-top {
+  width: 1920px;
+}
 
-  .nav_bar {
-    width: 1920px;
-    height: 80px;
-    background-color: black;
-    padding: 0;
-    display: inline-block;
-    margin-top: -8px;
-  }
+.nav_bar {
+  width: 1920px;
+  height: 80px;
+  background-color: black;
+  padding: 0;
+  margin-top: -8px;
+  color: white;
+  font-size: 20px;
+}
+
+.routes {
+  display: inline-block;
+  padding: 28px;
+}
+
+.nav_bar__right-side {
+  color: white;
+  font-size: 20px;
+  list-style: none;
+  display: inline-block;
+  position: absolute;
+  top: -30px;
+  left: 1500px;
+}
 
 .nav_button button {
   color: lightgrey;
-  margin-top: 100px;
+  margin-top: 140px;
   margin-left: -160px;
-
-}
-
-.nav_bar__full-width {
-display: block;
-}
-
-.nav_bar__full-width p {
-  float: left;
-  display: inline-block;
-  padding: 14px;
-  font-size: 12px;
-  color: white;
-
-}
-
-.nav_bar__right-side li {
-  font-size: 12px;
-  color: white;
-  list-style:  none;
-  display: inline-block;
-  float: right;
-  padding: 14px;
-  margin-right: 32px;
 }
 
 .smallthumb_column {
   width: 1800px;
   margin-left: 80px;
-
 }
 
 .details {
@@ -361,6 +359,7 @@ display: block;
 .employee-art-grants {
   margin-left: 520px;
   margin-bottom: 80px;
+  color: #ABB7B7;
 }
 
 .bigthumb {
@@ -388,9 +387,68 @@ display: block;
   float: right;
 }
 
+.text {
+  width: 1744px;
+  margin: 80px 0 16px 110px;
+}
 
+.fa-shield {
+  position: absolute;
+  top: 2px;
+  left: 14px;
+  font-size: 30px;
+}
 
+.left-side_info {
+  position: absolute;
+  top: 2px;
+  left: 80px;
+}
 
+.small-but-mighty {
+  background-image: url("../assets/solrod-team-background.jpg");
+  display: block;
+  background-size: cover;
+  height: 600px;
+  width: 1908px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
 
+.last-image img {
+  margin-left: 700px;
+  margin-top: 100px;
+  width: 400px;
+  height: 400px;
+}
 
+.what {
+  text-align: center;
+  width: 300px;
+  padding-top: 30px;
+  margin-left: 760px;
+}
+
+.background {
+  width: 1908px;
+}
+
+.icon-set {
+  width: 1908px;
+  margin-left: -2px;
+}
+
+.insta-icon,
+.tw-icon,
+.face-icon {
+  margin-left: 30px;
+}
+
+.face-icon {
+  margin-right: 60px;
+}
+
+.icons img {
+  width: 30px;
+}
 }
